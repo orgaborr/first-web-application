@@ -1,8 +1,6 @@
 package com.orgabor;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +12,7 @@ public class LoginServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		PrintWriter writer = res.getWriter();
+		req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req,  res);
 	}
-
+	
 }
