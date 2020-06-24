@@ -11,8 +11,10 @@
 System.out.println("Dummy");
 Date date = new Date();
 %>
-<div>Current date is <%=date%></div>
+<div>Current date is <%=date%></div><br>
 <body>
-Hello ${name} from JSP!
+<form action="/login.do">
+Enter your name: <input type="text" name="name"/><input type="submit" value="login"/>
+</form>
 </body>
 </html>
