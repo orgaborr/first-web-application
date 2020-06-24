@@ -7,6 +7,6 @@
 <title>JSP Sample</title>
 </head>
 <body>
-<p>Dummy Stuff</p>
+Hello ${name} from JSP!
 </body>
 </html>
