@@ -8,10 +8,11 @@
 <title>Todos</title>
 </head>
 <body>
+<p>Welcome ${name}</p>
 <p>Your Todos are:</p>
 <ol>
 	<c:forEach items="${todos}" var="todo">
-	<li>${todo}</li>
+	<li>${todo.name}</li>
 	</c:forEach>
 </ol>
 </body>
