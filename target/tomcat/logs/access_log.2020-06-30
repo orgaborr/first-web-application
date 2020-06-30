@@ -66,3 +66,10 @@
 0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:05:28 +0200] "GET /todo.do HTTP/1.1" 200 458 http-bio-8080-exec-4 0
 0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:44:40 +0200] "GET /todo.do HTTP/1.1" 200 606 http-bio-8080-exec-6 363
 0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:44:40 +0200] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:03 +0200] "GET / HTTP/1.1" 200 401 http-bio-8080-exec-1 57
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:08 +0200] "POST /login.do HTTP/1.1" 302 - http-bio-8080-exec-2 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:09 +0200] "GET /todo.do HTTP/1.1" 200 667 http-bio-8080-exec-3 369
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:18 +0200] "POST /todo.do HTTP/1.1" 302 - http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:18 +0200] "GET /todo.do HTTP/1.1" 200 793 http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:34 +0200] "GET /delete-todo.do?todo=Learn%20to%20Write%20Quality%20Code HTTP/1.1" 302 - http-bio-8080-exec-6 1
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:19:56:34 +0200] "GET /todo.do HTTP/1.1" 200 667 http-bio-8080-exec-7 1
