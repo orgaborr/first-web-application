@@ -8,13 +8,12 @@
 <title>JSP Sample</title>
 </head>
 <%
-System.out.println("Dummy");
 Date date = new Date();
 %>
 <div>Current date is <%=date%></div><br>
 <body>
-<form action="/login.do">
-Enter your name: <input type="text" name="name"/><input type="submit" value="login"/>
+<form action="/login.do" method="post">
+Enter your name: <input type="text" name="name"/><input type="submit" value="Login"/>
 </form>
 </body>
 </html>
