@@ -1,4 +1,4 @@
-package com.orgabor;
+package com.orgabor.login;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,9 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.orgabor.login.LoginService;
+import com.orgabor.todo.TodoService;
+
 @WebServlet(urlPatterns = "/login.do")
 public class LoginServlet extends HttpServlet {
-	private UserValidationService userValidationService = new UserValidationService();
+	private LoginService userValidationService = new LoginService();
 	private TodoService todoService = new TodoService();
 	
 	@Override

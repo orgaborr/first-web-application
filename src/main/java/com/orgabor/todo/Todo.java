@@ -1,4 +1,4 @@
-package com.orgabor;
+package com.orgabor.todo;
 
 public class Todo {
 	private String name;

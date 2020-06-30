@@ -8,6 +8,8 @@
 <title>Welcome!</title>
 </head>
 <body>
-Welcome ${name}
+<p>Welcome ${name}</p>
+<p>Your Todos are:</p>
+<p>${todos}</p>
 </body>
 </html>
