@@ -23,9 +23,16 @@ public class LoginServlet extends HttpServlet {
 		String name = req.getParameter("name");
 		String password = req.getParameter("password");
 
-		req.setAttribute("name", req.getParameter("name"));
-		req.setAttribute("password", req.getParameter("password"));
-		req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, res);
+		boolean isUserValid = service.isUserValid(name, password);
+		
+		if(isUserValid) {
+			req.setAttribute("name", req.getParameter("name"));
+			req.setAttribute("password", req.getParameter("password"));
+			req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, res);
+		} else {
+			req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, res);
+		}
+		
 	}
 	
 }
