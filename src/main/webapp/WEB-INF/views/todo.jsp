@@ -54,7 +54,7 @@ padding: 0 15px;
 		<ol>
 			<c:forEach items="${todos}" var="todo">
 				<li>${todo.name}&nbsp;<a
-					href="/deletetodo.do?todo=${todo.name}">Delete</a></li>
+					href="/delete-todo.do?todo=${todo.name}">Delete</a></li>
 			</c:forEach>
 		</ol>
 
