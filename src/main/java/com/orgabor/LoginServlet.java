@@ -14,12 +14,12 @@ public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //		req.setAttribute("name", req.getParameter("name"));
 //		req.setAttribute("password", req.getParameter("password"));
-		
 		req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req,  res);
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		req.setAttribute("name", req.getParameter("name"));
 		req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, res);
 	}
 	
