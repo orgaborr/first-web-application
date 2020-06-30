@@ -30,6 +30,7 @@ public class LoginServlet extends HttpServlet {
 			req.setAttribute("password", req.getParameter("password"));
 			req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, res);
 		} else {
+			req.setAttribute("errorMessage", "Invalid Credentials!");
 			req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, res);
 		}
 		
