@@ -1,47 +1,76 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Todos</title>
+<title>Yahoo!!</title>
+<!-- Bootstrap core CSS -->
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
 <style>
-	.footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 60px;
-		background-color: #f5f5f5;
-	}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+.footer .container {
+width: auto;
+max-width: 680px;
+padding: 0 15px;
+}
 </style>
 </head>
 
 <body>
 
-	<nav class="navbar navbar-default">
+	<nav role="navigation" class="navbar navbar-default">
 
-		<a href="/" class="navbar-brand">Brand</a>
+		<div class="">
+			<a href="/" class="navbar-brand">Brand</a>
+		</div>
 
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/todo.do">Todos</a></li>
-			<li><a href="http://www.in28minutes.com">In28Minutes</a></li>
-		</ul>
-
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/login.do">Login</a></li>
-		</ul>
+		<div class="navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="/todo.do">Todos</a></li>
+				<li><a href="http://www.in28minutes.com">In28Minutes</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/login.do">Login</a></li>
+			</ul>
+		</div>
 
 	</nav>
 
 	<div class="container">
-		<H1>Heading</H1>
-		Body of the Page
+		<H1>Welcome ${name}</H1>
+
+		Your Todos are
+		<ol>
+			<c:forEach items="${todos}" var="todo">
+				<li>${todo.name}&nbsp;<a
+					href="/deletetodo.do?todo=${todo.name}">Delete</a></li>
+			</c:forEach>
+		</ol>
+
+		<p>
+			<font color="red">${errorMessage}</font>
+		</p>
+		<form method="POST" action="/todo.do">
+			New Todo : <input name="todo" type="text" /> <input name="add"
+				type="submit" />
+		</form>
 	</div>
 
 	<footer class="footer">
-		<p>footer content</p>
+		<div class="container">
+			<p>footer content</p>
+		</div>
 	</footer>
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
