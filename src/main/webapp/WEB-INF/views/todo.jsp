@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<title>Yahoo!!</title>
+<title>Todos</title>
 <!-- Bootstrap core CSS -->
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">

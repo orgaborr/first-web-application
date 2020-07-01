@@ -22,3 +22,11 @@
 0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:48:03 +0200] "GET /deletetodo.do?todo=Learn%20to%20Write%20Quality%20Code HTTP/1.1" 404 977 http-bio-8080-exec-4 0
 0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:48:52 +0200] "GET /deletetodo.do?todo=Learn%20to%20Write%20Quality%20Code HTTP/1.1" 404 977 http-bio-8080-exec-4 1
 0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:48:55 +0200] "GET /deletetodo.do?todo=Learn%20to%20Write%20Quality%20Code HTTP/1.1" 404 977 http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:49:55 +0200] "GET /todo.do HTTP/1.1" 200 1808 http-bio-8080-exec-1 420
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:49:55 +0200] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 304 - http-bio-8080-exec-2 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:49:55 +0200] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 304 - http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:49:55 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 200 121260 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:49:59 +0200] "POST /todo.do HTTP/1.1" 302 - http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:49:59 +0200] "GET /todo.do HTTP/1.1" 200 1936 http-bio-8080-exec-8 1
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:50:01 +0200] "GET /delete-todo.do?todo=Learn%20to%20Write%20Quality%20Code HTTP/1.1" 302 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [30/Jun/2020:20:50:01 +0200] "GET /todo.do HTTP/1.1" 200 1808 http-bio-8080-exec-10 1
