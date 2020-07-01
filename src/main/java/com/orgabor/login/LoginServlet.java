@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 		
 		if(isUserValid) {
 			req.getSession().setAttribute("name", name);
-			res.sendRedirect("/todo.do");
+			res.sendRedirect("/list-todo.do");
 		} else {
 			req.setAttribute("errorMessage", "Invalid Credentials!");
 			req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, res);

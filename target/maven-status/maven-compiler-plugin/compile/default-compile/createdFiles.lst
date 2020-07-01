@@ -1,6 +1,7 @@
 com\orgabor\login\LoginServlet.class
+com\orgabor\todo\AddTodoServlet.class
 com\orgabor\login\LoginService.class
 com\orgabor\todo\DeleteTodoServlet.class
 com\orgabor\todo\TodoService.class
-com\orgabor\todo\TodoServlet.class
+com\orgabor\todo\ListTodoServlet.class
 com\orgabor\todo\Todo.class

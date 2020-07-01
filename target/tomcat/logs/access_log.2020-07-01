@@ -1,6 +1,0 @@
-0:0:0:0:0:0:0:1 - - [01/Jul/2020:18:56:25 +0200] "GET / HTTP/1.1" 200 1412 http-bio-8080-exec-1 407
-0:0:0:0:0:0:0:1 - - [01/Jul/2020:18:56:25 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 200 16384 http-bio-8080-exec-2 3
-0:0:0:0:0:0:0:1 - - [01/Jul/2020:18:56:25 +0200] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 1
-0:0:0:0:0:0:0:1 - - [01/Jul/2020:18:56:36 +0200] "POST /login.do HTTP/1.1" 302 - http-bio-8080-exec-5 2
-0:0:0:0:0:0:0:1 - - [01/Jul/2020:18:56:36 +0200] "GET /todo.do HTTP/1.1" 200 1811 http-bio-8080-exec-6 88
-0:0:0:0:0:0:0:1 - - [01/Jul/2020:18:56:52 +0200] "GET /login.do HTTP/1.1" 200 1412 http-bio-8080-exec-7 1
