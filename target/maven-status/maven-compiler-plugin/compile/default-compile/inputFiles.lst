@@ -1,6 +1,7 @@
 C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\filter\LoginRequiredFilter.java
 C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\todo\AddTodoServlet.java
 C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\login\LoginService.java
+C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\logout\LogoutServlet.java
 C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\todo\TodoService.java
 C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\login\LoginServlet.java
 C:\Users\user\Projects\first-web-application\src\main\java\com\orgabor\todo\Todo.java
