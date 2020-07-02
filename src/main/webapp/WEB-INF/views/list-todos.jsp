@@ -51,12 +51,23 @@ padding: 0 15px;
 		<H1>Welcome ${name}</H1>
 
 		Your Todos are
-		<ol>
+		<table class="table table-striped">
+			<thead>
+				<th>Description</th>
+				<th>Category</th>
+				<th>Actions</th>
+			</thead>
+			<tbody>
 			<c:forEach items="${todos}" var="todo">
-				<li>${todo.name}&nbsp;<a
-					href="/delete-todo.do?todo=${todo.name}">Delete</a></li>
+				<tr>
+					<td>${todo.name}</td>
+					<td>${todo.category}</td>
+					<td>&nbsp;&nbsp;<a
+					href="/delete-todo.do?todo=${todo.name}&category=${todo.category}">Delete</a></td>
+				</tr>
 			</c:forEach>
-		</ol>
+			</tbody>
+		</table>
 
 		<p>
 			<font color="red">${errorMessage}</font>

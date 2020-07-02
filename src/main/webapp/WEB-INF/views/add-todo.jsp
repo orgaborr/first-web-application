@@ -50,7 +50,9 @@ padding: 0 15px;
 	<div class="container">
 		Your New Action Item:
 		<form method="POST" action="/add-todo.do">
-			New Todo : <input name="todo" type="text" /> <input name="add"
+			Description : <input name="todo" type="text" /> <br>
+			Category : <input name="category" type="text" /> <br>
+			<input name="add"
 				type="submit" />
 		</form>
 	</div>
