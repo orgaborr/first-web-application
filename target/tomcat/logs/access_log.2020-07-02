@@ -51,3 +51,15 @@
 0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:32:24 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 304 - http-bio-8080-exec-6 1
 0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:32:24 +0200] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 304 - http-bio-8080-exec-4 1
 0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:32:24 +0200] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 304 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:31 +0200] "GET /list-todos.do HTTP/1.1" 200 1916 http-bio-8080-exec-7 60
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:31 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 304 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:31 +0200] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 304 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:31 +0200] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 304 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:33 +0200] "GET /list-todos.do HTTP/1.1" 200 1916 http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:33 +0200] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 304 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:33 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 304 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:33 +0200] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 304 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:55 +0200] "GET /list-todos.do HTTP/1.1" 200 1916 http-bio-8080-exec-7 3
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:55 +0200] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 304 - http-bio-8080-exec-8 1
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:55 +0200] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 304 - http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [02/Jul/2020:18:34:55 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 304 - http-bio-8080-exec-3 1
