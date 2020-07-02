@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
 
 @WebFilter(urlPatterns = "*.do")
 public class LoginRequiredFilter implements Filter {
@@ -18,8 +19,17 @@ public class LoginRequiredFilter implements Filter {
 	}
 
 	@Override
-	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
+	public void doFilter(ServletRequest servletReq, ServletResponse servletRes, FilterChain chain)
 			throws IOException, ServletException {
+		HttpServletRequest req = (HttpServletRequest) servletReq;
+		
+		System.out.println(req.getRequestURI());
+		
+		if (req.getSession().getAttribute("name") != null) {
+			chain.doFilter(servletReq, servletRes);
+		} else {
+			req.getRequestDispatcher("/login.do").forward(servletReq, servletRes);
+		}
 		
 	}
 
