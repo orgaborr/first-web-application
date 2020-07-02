@@ -3,5 +3,7 @@ com\orgabor\todo\AddTodoServlet.class
 com\orgabor\login\LoginService.class
 com\orgabor\todo\DeleteTodoServlet.class
 com\orgabor\todo\TodoService.class
+com\orgabor\filter\LoginRequiredFilter.class
 com\orgabor\todo\ListTodoServlet.class
+com\orgabor\logout\LogoutServlet.class
 com\orgabor\todo\Todo.class

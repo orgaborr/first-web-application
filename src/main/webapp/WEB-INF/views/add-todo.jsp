@@ -48,19 +48,7 @@ padding: 0 15px;
 	</nav>
 
 	<div class="container">
-		<H1>Welcome ${name}</H1>
-
-		Your Todos are
-		<ol>
-			<c:forEach items="${todos}" var="todo">
-				<li>${todo.name}&nbsp;<a
-					href="/delete-todo.do?todo=${todo.name}">Delete</a></li>
-			</c:forEach>
-		</ol>
-
-		<p>
-			<font color="red">${errorMessage}</font>
-		</p>
+		Your New Action Item:
 		<form method="POST" action="/add-todo.do">
 			New Todo : <input name="todo" type="text" /> <input name="add"
 				type="submit" />
