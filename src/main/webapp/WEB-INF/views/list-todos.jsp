@@ -62,7 +62,7 @@ padding: 0 15px;
 				<tr>
 					<td>${todo.name}</td>
 					<td>${todo.category}</td>
-					<td>&nbsp;&nbsp;<a
+					<td>&nbsp;&nbsp;<a class="btn btn-danger"
 					href="/delete-todo.do?todo=${todo.name}&category=${todo.category}">Delete</a></td>
 				</tr>
 			</c:forEach>
@@ -72,7 +72,7 @@ padding: 0 15px;
 		<p>
 			<font color="red">${errorMessage}</font>
 		</p>
-		<a
+		<a class="btn btn-success"
 			href="/add-todo.do">Add New Todo</a>
 	</div>
 

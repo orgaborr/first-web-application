@@ -19,9 +19,9 @@
 }
 
 .footer .container {
-width: auto;
-max-width: 680px;
-padding: 0 15px;
+	width: auto;
+	max-width: 680px;
+	padding: 0 15px;
 }
 </style>
 </head>
@@ -50,10 +50,15 @@ padding: 0 15px;
 	<div class="container">
 		Your New Action Item:
 		<form method="POST" action="/add-todo.do">
-			Description : <input name="todo" type="text" /> <br>
-			Category : <input name="category" type="text" /> <br>
-			<input name="add"
-				type="submit" />
+			<fieldset class="form-group">
+				<label>Description</label>
+				<input name="todo" type="text" class="form-control"/> <br>
+			</fieldset>
+			<fieldset class="form-group">
+				<label>Category</label>
+				<input name="category" type="text" class="form-control"/> <br>
+			</fieldset>
+			<input name="add" type="submit" class="btn btn-success" value="Submit"/>
 		</form>
 	</div>
 
